@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.controls{
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    width: 100vw;
+    padding: 10px 0 ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    div{
+        border-radius: .5rem;
+        background-color: rgb(255, 255, 255);
+        padding: 2px;
+        color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        width: clamp(20%, 90%, 500px);
+        input{
+            width: 100%;
+        }
+        >div{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            input{
+                width: 50%;
+            }
+        }
+    }
+    
+    input{
+        font-family: inherit;
+        padding: .5rem;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 0;
+        border-radius: .5rem;
+        outline: 0;
+        &[type=button]{
+            font-weight: 500;
+            color: #000;
+            background-color: #fafafa;
+        }
+    }
+}
+
+.score{
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    h1{
+        border-radius: .5rem;
+        background-color: rgb(255, 255, 255);
+        padding: 2px 10px;
+        color: #000;
+    }
+}
+
+#cover{
+    z-index: 10000;
+    position: fixed;
+    background-color: #000a;
+    color: #fff;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    p{
+        margin: 0;
+    }
+    input{
+        margin: .3rem;
+        font-family: inherit;
+        font-weight: 400;
+        outline: none;
+        &[type="button"]{
+            padding: .5em 1em;
+            font-size: 1em;
+        }
+    }
+}

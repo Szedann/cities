@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pickme miasto</title>
+    <script src="js/script.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="cover">
+        <h1>Ładowanie...</h1>
+    </div>
+    <div id="map"></div>
+    <div class="score">
+        <h1 id="score">0</h1>
+    </div>
+    <div class="controls">
+        <div>
+            <input type="text" placeholder="Miasto" id="name" autocomplete="off">
+            <div>
+                <input type="button" class="check" onclick="checkDecision()" value="Sprawdź">
+                <input type="button" class="skip" onclick="skip()" value="Pomiń">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
